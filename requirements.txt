@@ -1,0 +1,4 @@
+Python 3.12.1
+VS Code 1.138.0
+Git 2.45.1.windows.1
+GitHub Public Repository
