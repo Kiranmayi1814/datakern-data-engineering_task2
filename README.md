@@ -5,6 +5,29 @@
 ## Problem Statement
 A Python application to manage customers, products and orders, calculate totals, apply discounts and update stock.
 
+## Project Structure
+~~~text
+retail_order_management/
+├── docs/
+│   └── solution_design.md
+├── src/
+│   ├── Milestone1.py
+│   ├── Milestone2.py
+│   ├── Milestone3.py
+│   ├── Milestone4.py
+│   ├── Milestone5.py
+│   ├── Milestone6.py
+│   ├── Milestone7.py
+│   ├── Milestone8.py
+│   └── Milestone9.py
+├── tests/
+│   ├── test_data.md
+│   └── test_results.md
+├── .gitignore
+├── README.md
+└── requirements.txt
+~~~
+
 ## Technologies
 Python 3.12.1, VS Code, Git, GitHub and Python Standard Library.
 
