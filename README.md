@@ -1,12 +1,14 @@
-
 # Retail Order Management System
+
 **Name:** PAVANI DURGA KIRANMAYI SANGOJU
 
 ## Problem Statement
+
 A Python application to manage customers, products and orders, calculate totals, apply discounts and update stock.
 
 ## Project Structure
-~~~text
+
+```text
 retail_order_management/
 ├── docs/
 │   └── solution_design.md
@@ -26,13 +28,16 @@ retail_order_management/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-~~~
+```
 
 ## Technologies
+
 Python 3.12.1, VS Code, Git, GitHub and Python Standard Library.
 
 ## Setup & Run
+
 Create a virtual environment and run:
+
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
@@ -40,32 +45,39 @@ python src/Milestone9.py
 ```
 
 ## Class Design
-Customer stores common customer details.
-RegularCustomer, PremiumCustomer and CorporateCustomer provide customer-specific behaviour.
-Product manages product price and stock.
-OrderItem stores product quantity and item amount.
-Order manages order items and total calculation.
+
+Customer stores customer details.
+Product stores product details, price and stock.
+OrderItem stores product quantity and calculates item amount.
+Order manages the order and calculates the total.
 
 ## Inheritance
-Customer subclasses share common details and implement different discount rules.
+
+Customer types are created using RegularCustomer, PremiumCustomer and CorporateCustomer classes in Milestone 3 and discount behaviour is added in Milestone 4.
 
 ## Polymorphism
-The `get_discount()` method provides customer-specific discount behaviour.
+
+The `get_discount()` method returns different discount values for different customer types.
 
 ## Encapsulation
-Validation controls product price, stock and order quantity to prevent invalid values.
+
+Validation is used for product price, stock and order quantity to prevent invalid values.
 
 ## Business Rules
+
 Regular: 6%, Premium: 7% and Corporate: 5% discount.
 Order total = price × quantity × (1 − discount / 100).
 Quantity must be positive and within available stock.
 
 ## Testing
+
 Tests cover customer types, discounts, valid orders, invalid quantities and stock updates.
 
 ## Assumptions
-The application processes one order item at a time and uses sample product data.
+
+The application uses sample customer and product data and processes one product order at a time.
 
 ## Problems & Solutions
-Invalid quantities are handled through validation.
-Stock is reduced only after a successful order.
+
+Invalid quantities are handled using validation.
+Stock is reduced after a successful order.
