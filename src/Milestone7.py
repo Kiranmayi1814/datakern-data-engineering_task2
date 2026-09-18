@@ -1,4 +1,3 @@
-
 class Product:
     def __init__(self,product_id,product_name,price,stock):
         self.product_id=product_id
@@ -32,10 +31,10 @@ class Order:
         print("Order completed")
         print("Total Amount:",self.calculate_total())
         print("Remaining Stock:",self.item.product.stock)
+product=Product("P101","Laptop",50000,10)
+item=OrderItem(product,2)
+my_order=Order("O101",item)
 try:
-    product=Product("P101","Laptop",50000,10)
-    item=OrderItem(product,2)
-    my_order=Order("O101",item)
     my_order.complete_order()
 except ValueError as error:
     print("Error:",error)
