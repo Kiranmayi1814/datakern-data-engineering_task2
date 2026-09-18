@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 class Customer:
     def __init__(self,customer_id,name):
         self.customer_id=customer_id
         self.name=name
-=======
->>>>>>> fd66a08 (Complete retail order management tasks)
 class Product:
     def __init__(self,product_id,product_name,price,stock):
         if price<0:
